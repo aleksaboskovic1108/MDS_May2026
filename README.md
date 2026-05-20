@@ -17,14 +17,17 @@
 ## Running
 
 docker compose up - docker run (local option)
+
 mvn clean install & mvn spring-boot:run - services run (local option)
 
-mvn clean package - services run (dockerized option)
+
 docker compose up --build - docker run (dockerized option)
+
+mvn clean package - services run (dockerized option)
+
 
 ## Testing
 
-(local option)
 curl --location 'http://localhost:8080/orders' \
 --header 'Content-Type: application/json' \
 --data '{
